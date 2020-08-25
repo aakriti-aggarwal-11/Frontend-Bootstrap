@@ -5,6 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="stylesheet.css">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -14,6 +16,10 @@
 </head>
 
 <body>
+    <div class="logos">
+        <img src="Images/img.jpg" class="img1">
+        <img src="Images/img.jpg" class="img2">
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Welcome!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -58,17 +64,232 @@
             </nav>
         </div>
     </nav>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+
+
+    <!--
+    <div class="filter-results">
+        <div class="card border-primary" style="max-width: 35rem;">
+            <div class="card-header display-4">Refine Results</div>
+            <div class="card-body text-primary display-6">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Indian University Name OR College Name</label>
+                        <input type="text" class="form-control" id="indianUniv" aria-describedby="emailHelp"
+                            placeholder="Enter College Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="mr-sm-2" for="inlineFormCustomSelect">Type</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormTypeSelect">
+                            <option selected="">-Any-</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="mr-sm-2" for="inlineFormCustomSelect">Department</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormDepartmentSelect">
+                            <option selected="">-Any-</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Foreign University Name</label>
+                        <input type="text" class="form-control" id="foreignUniv" aria-describedby="emailHelp"
+                            placeholder="Enter College Name">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Apply</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md mx-auto center">
+        <div class="card" style="width: 50%;" align="center">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                    of
+                    the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 50%;" align="center">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                    of
+                    the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 50%;" align="center">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                    of
+                    the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 50%;" align="center">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                    of
+                    the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    </div> -->
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <br><br><br><br>
+                    <div class="filter-results">
+                        <div class="card border-primary" style="max-width: 35rem;">
+                            <div class="card-header display-4">Refine Results</div>
+                            <div class="card-body text-primary display-6">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Indian University Name OR College Name</label>
+                                        <input type="text" class="form-control" id="indianUniv"
+                                            aria-describedby="emailHelp" placeholder="Enter College Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Type</label>
+                                        <select class="custom-select mr-sm-2" id="inlineFormTypeSelect">
+                                            <option selected>-Any-</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="mr-sm-2" for="inlineFormCustomSelect">Department</label>
+                                        <select class="custom-select mr-sm-2" id="inlineFormDepartmentSelect">
+                                            <option selected>-Any-</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Foreign University Name</label>
+                                        <input type="text" class="form-control" id="foreignUniv"
+                                            aria-describedby="emailHelp" placeholder="Enter College Name">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Apply</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mx-auto center">
+                    <h3 class="display-4">All Academicians</h3>
+                    <div class="card-columns">
+                        <div class="card">
+                            <img class="card-img-top" src="Images/people.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Faculty
+                                    University
+                                    email@something.com
+                                    Lorem Ipsum</p>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">View</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="Images/people.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Faculty
+                                    University
+                                    email@something.com
+                                    Lorem Ipsum</p>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">View</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="Images/people.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Faculty
+                                    University
+                                    email@something.com
+                                    Lorem Ipsum</p>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">View</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="Images/people.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Faculty
+                                    University
+                                    email@something.com
+                                    Lorem Ipsum</p>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">View</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="Images/people.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Faculty
+                                    University
+                                    email@something.com
+                                    Lorem Ipsum</p>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">View</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img" src="Images/people.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h5 class="card-title">Name</h5>
+                                <p class="card-text">Faculty
+                                    University
+                                    email@something.com
+                                    Lorem Ipsum</p>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
