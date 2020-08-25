@@ -1,9 +1,11 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-  }
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
   
+}
   .card {
     margin: 1rem;
     height: initial;
@@ -78,3 +80,5 @@
     margin-bottom: 30px;
     padding: 20px;
   }
+
+
