@@ -204,12 +204,12 @@
                     <div class="filter-results">
                         <div class="card-body text-primary display-6">
                             <form>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="exampleInputEmail1">Indian University Name or College Name</label>
                                     <input type="text" id="myFilter" class="form-control" onkeyup="myFunction1()"
                                         placeholder="Text">
                                 </div>
-                                <div class="form-group">
+                                 <div class="form-group">
                                     <label class="mr-sm-2" for="inlineFormCustomSelect">Type</label>
                                     <select class="custom-select mr-sm-2" id="inlineFormTypeSelect">
                                         <option selected>-Any-</option>
@@ -226,10 +226,16 @@
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
-                                </div>
+                                </div> -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Professor name</label>
-                                    <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()"
+                                    <label for="exampleInputEmail1">Indian University Name or College Name</label>
+                                    <input type="text" id="myFilter" class="form-control" onkeyup="myFunction1()"
+                                        placeholder="Text">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Indian University Name or College Name</label>
+                                    <input type="text" id="myFilter" class="form-control" onkeyup="myFunction1()"
                                         placeholder="Text">
                                 </div>
                             </form>
@@ -239,12 +245,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 mb-3">
-                    <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()"
-                        placeholder="Search for names...">
-                </div>
-            </div>
+            
             <div class="row" id="myItems">
                 <div class="col-sm-12 mb-3">
                     <div class="card">
@@ -331,6 +332,8 @@
                     }
                 }
             }
+        </script>
+        <script>
             function myFunction1() {
                 var input, filter, cards, cardContainer, h5, title, i;
                 input = document.getElementById("myFilter");
@@ -346,21 +349,7 @@
                     }
                 }
             }
-            function myFunction2() {
-                var input, filter, cards, cardContainer, h5, title, i;
-                input = document.getElementById("myFilter");
-                filter = input.value.toUpperCase();
-                cardContainer = document.getElementById("myItems");
-                cards = cardContainer.getElementsByClassName("card");
-                for (i = 0; i < cards.length; i++) {
-                    title = cards[i].querySelector(".card-body p.");
-                    if (title.innerText.toUpperCase().indexOf(filter) > -1) {
-                        cards[i].style.display = "";
-                    } else {
-                        cards[i].style.display = "none";
-                    }
-                }
-            }
+
         </script>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
